@@ -33,7 +33,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <SidebarProvider defaultOpen={true}>
-      <div className="flex min-h-screen flex-col bg-background">
+      <div className="flex min-h-screen flex-col bg-background w-full relative lg:ml-[260px]">
+        {/* Sidebar is always open in this layout */} 
         <AppSidebar />
         <SidebarInset className="flex flex-col">
           <SiteHeader />
